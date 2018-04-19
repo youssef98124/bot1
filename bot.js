@@ -1,10 +1,5 @@
 const Discord = require('discord.js');
-
 const client = new Discord.Client();
-
-client.on('ready', () => {
-  console.log('By NightMarE Enjoy');
-});
 
 client.on('message', message => {
   if (message.content === '!join') {
