@@ -1,4 +1,4 @@
-exports.TOKEN = 'NDM3OTUyNjA4MzIyMzIyNDMy.Db_qJw.Ssk1JkdELMyNbYbxpH3CKrn-URI'; // ya wr3 la tns5
+exports.TOKEN = ''; // ya wr3 la tns5
 
 exports.PREFIX = '';
 
