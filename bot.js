@@ -7,7 +7,7 @@ const getYoutubeID = require('get-youtube-id');
 const fetchVideoInfo = require('youtube-info');
 
 const yt_api_key = "AIzaSyDeoIH0u1e72AtfpwSKKOSy3IPp2UHzqi4";
-const prefix = 'music!';
+const prefix = '1';
 const discord_token = "NDM3OTUyNjA4MzIyMzIyNDMy.Db_djw.5PdEGXWLbtEI-r9MsuaA-oLtTeA";
 client.login(discord_token);
 client.on('ready', function() {
