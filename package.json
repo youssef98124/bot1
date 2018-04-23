@@ -2,9 +2,9 @@
   "name": "Test",
   "description": "Test",
   "version": "0.0.0",
-  "main": "bot.js",
+  "main": "music.js",
   "scripts": {
-    "start": "node bot.js"
+    "start": "node music.js"
   },
   "dependencies": {
     "dirname": "^0.1.0",
