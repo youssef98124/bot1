@@ -1,13 +1,10 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-var dat = JSON.parse("{}");
-function forEachObject(obj, func) {
-    Object.keys(obj).forEach(function (key) { func(key, obj[key]) })
-}
+
 client.on("ready", () => {
     var guild;
     while (!guild)
-        guild = client.guilds.find("name", " ")
+        guild = client.guilds.find("name", "h ")
     guild.fetchInvites().then((data) => {
         data.forEach((Invite, key, map) => {
             var Inv = Invite.code;
@@ -27,7 +24,7 @@ client.on("guildMemberAdd", (member) => {
     console.log('made it till here!');
     var guild;
     while (!guild)
-        guild = client.guilds.find("name", " )
+        guild = client.guilds.find("name",D" )
     guild.fetchInvites().then((data) => {
         data.forEach((Invite, key, map) => {
             var Inv = Invite.code;
