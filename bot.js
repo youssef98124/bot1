@@ -1,6 +1,8 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
+
+
 client.on('message', message => {   
 if (message.author.boss) return;
 var prefix = "-";
@@ -187,26 +189,7 @@ return;
 });
 
 
-client.on("message", message => {
-    if (message.content === "-help") {
-     const embed = new Discord.RichEmbed() 
-         .setColor("#ffff00")
-         .setFooter('By flexbot')
-         .setThumbnail(message.author.avatarURL)
-         .setDescription(`
-  
-     **✨Administrationr Commands | اوامر الاداره✨**
-   - اعطاء ميوت | -mute
-   - فك ميوت  | -umute
-   - -حذف شات |مسح
-   - البرودكاست | -bc
-   -  الافتار بالمنشن |  افتار 
-   -
-   `)
-   message.author.sendEmbed(embed)
-   
-   }
-   });  
+ 
 
 
 
