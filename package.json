@@ -1,10 +1,11 @@
 {
-  "name": "test",
-  "version": "0.0.0",
+  "name": "Test",
   "description": "Test",
+  "version": "0.0.0",
   "main": "bot.js",
   "scripts": {
     "start": "node bot.js"
+  },
   "dependencies" {
     "dirname": "^0.1.0",
     "discord.js": "^11.3.0",
