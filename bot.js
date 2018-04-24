@@ -187,5 +187,36 @@ return;
     }
 });
 
+
+client.on("message", message => {
+    if (message.content === "-help") {
+     const embed = new Discord.RichEmbed() 
+         .setColor("#ffff00")
+         .setFooter('By flexbot')
+         .setThumbnail(message.author.avatarURL)
+         .setDescription(`
+  
+     **✨Administrationr Commands | اوامر الاداره✨**
+   - اعطاء ميوت | -mute
+   - فك ميوت  | -umute
+   - -حذف شات |مسح
+   - البرودكاست | -bc
+   -  الافتار بالمنشن |  افتار 
+   -
+   `)
+   message.author.sendEmbed(embed)
+   
+   }
+   });  
+
+
+
+client.on('ready', () => {
+     dark.user.setActivity("flexbots",{type: 'WATCHING'});
+
+});
+
+
+
  
 client.login('NDM4MzIxODU0MTMwODE0OTc2.DcC6jg.SumZyhQZFxa4JxV8UeHmu7hp5vM');
