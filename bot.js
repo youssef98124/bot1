@@ -70,5 +70,42 @@ var unmuteembeddm = new Discord.RichEmbed()
   user.send( unmuteembeddm);
 }
 });
+
+
+
+ client.on('message', message => {
+    if (message.content.startsWith("رابط")) {
+        message.channel.createInvite({
+        thing: true,
+        maxUses: 3,
+        maxAge: 3600,
+    }).then(invite =>
+      message.author.sendMessage(invite.url)
+    )
+    const embed = new Discord.RichEmbed()
+        .setColor("RANDOM")
+          .setDescription(" تم أرسال الرابط برسالة خاصة ")
+           .setAuthor(client.user.username, client.user.avatarURL)
+                 .setAuthor(client.user.username, client.user.avatarURL)
+                .setFooter('طلب بواسطة: ' + message.author.tag)
+
+      message.channel.sendEmbed(embed).then(message => {message.delete(10000)})
+              const Embed11 = new Discord.RichEmbed()
+        .setColor("RANDOM")
+        
+    .setDescription(" مدة الرابط : ساعه  عدد استخدامات الرابط : 3 ")
+      message.author.sendEmbed(Embed11)
+    }
+}); 
+
+
+
+
+
+
+
+
+
+
  
 client.login('NDM4MzIxODU0MTMwODE0OTc2.DcC6jg.SumZyhQZFxa4JxV8UeHmu7hp5vM');
