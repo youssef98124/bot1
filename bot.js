@@ -9,7 +9,7 @@ if (!message.content.startsWith(prefix)) return;
 let command = message.content.split(" ")[0];
 command = command.slice(prefix.length);
 let args = message.content.split(" ").slice(1);
-if (command == "ميوت") {
+if (command == "mute") {
 if (!message.channel.guild) return;
 if(!message.guild.member(message.author).hasPermission("MANAGE_MESSAGES")) return message.reply("انت لا تملك صلاحيات !! ").then(msg => msg.delete(5000));
 if(!message.guild.member(client.user).hasPermission("MANAGE_MESSAGES")) return message.reply("البوت لايملك صلاحيات ").then(msg => msg.delete(5000));;
@@ -44,15 +44,7 @@ ${user} انت معاقب بميوت كتابي بسبب مخالفة القوا
  user.send( muteembeddm);
 }
  
-client.on('message', message => {   
-if (message.author.boss) return;
-var prefix = "-";
-if (!message.content.startsWith(prefix)) return;
-let command = message.content.split(" ")[0];
-command = command.slice(prefix.length);
-let args = message.content.split(" ").slice(1); 
- 
- if (command == "فك ميوت") {
+ if (command == "umute") {
 if (!message.channel.guild) return;
 if(!message.guild.member(message.author).hasPermission("MANAGE_MESSAGES")) return message.reply("انتا لا تملك صلاحيات").then(msg => msg.delete(5000));
 if(!message.guild.member(client.user).hasPermission("MANAGE_MESSAGES")) return message.reply("البوت لايملك صلاحيات ").then(msg => msg.delete(5000));;
