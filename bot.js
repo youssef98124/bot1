@@ -1,14 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-
-
-client.on('ready', () => {
-     client.user.setActivity("flexbots",{type: 'WATCHING'});
-
-});
-
-
 client.on('message', message => {   
 if (message.author.boss) return;
 var prefix = "-";
