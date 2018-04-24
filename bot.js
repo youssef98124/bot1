@@ -141,5 +141,23 @@ client.on("message", message => {
   });
 
 
+client.on('message', message => {
+    if (message.content.startsWith("افتار")) {
+        var mentionned = message.mentions.users.first();
+    var x5bzm;
+      if(mentionned){
+          var x5bzm = mentionned;
+      } else {
+          var x5bzm = message.author;
+          
+      }
+        const embed = new Discord.RichEmbed()
+        .setColor("RANDOM")
+        .setImage(`${x5bzm.avatarURL}`)
+      message.channel.sendEmbed(embed);
+    }
+});
+
+
  
 client.login('NDM4MzIxODU0MTMwODE0OTc2.DcC6jg.SumZyhQZFxa4JxV8UeHmu7hp5vM');
