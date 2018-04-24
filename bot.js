@@ -3,6 +3,28 @@ const client = new Discord.Client();
 
 
 
+
+client.on('message', message => {
+     if (message.content === "-help") {
+     let embed = new Discord.RichEmbed()
+.setThumbnail(message.author.avatarURL)
+.addField('     **-mute** ' ,' **اعطاء ميوت بالمنشن** ')
+.addField('     **-umute**  ' ,' **فك ميوت بالمنشن** ')
+.addField('     **-مسح شات** ' , '**مسح **')
+.addField('     **للحصول علي رابط سيرفر** ' ,' ** رابط**')
+.addField('     **افتار بالمنشن** ' , '**افتار**')
+.addField('     **-bc ** ' ,' ** للبرودكاست ** ')
+.addField('للأستفسار أو الرد على أسئلتكم وأفكـــاركم ' , '**R-Gamer#6966**')
+.addField('**لدعوة البوت للسيرفر ..**' , '**https://discordapp.com/oauth2/authorize?client_id=438321854130814976&scope=bot&permissions=2146958591**')
+.setColor('RANDOM')
+  message.channel.sendEmbed(embed);
+    }
+});
+
+
+
+
+
 client.on('message', message => {   
 if (message.author.boss) return;
 var prefix = "-";
